@@ -1,0 +1,72 @@
+/* 기본 리셋 */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #fff0f5, #ffffff);
+  color: #222;
+}
+
+.main-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 80px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 18px 16px;
+  margin-top: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.message-section h1 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+
+.drawing-section h2,
+.gallery-section h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 하트가 찍힐 영역 */
+#drawing-area {
+  height: 260px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px dashed rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 버튼 */
+.button-section {
+  display: flex;
+  justify-content: center;
+}
+
+#love-button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #ff4d7d;
+  color: white;
+  box-shadow: 0 10px 20px rgba(255, 77, 125, 0.25);
+  transition: transform 0.08s ease;
+}
+
+#love-button:active {
+  transform: translateY(1px);
+}
